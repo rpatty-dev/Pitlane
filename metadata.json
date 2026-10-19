@@ -1,0 +1,6 @@
+{
+  "name": "Van Mechanic Logger",
+  "description": "A comprehensive van mechanic logging app for tracking repairs at Armagh and Banbridge yards, with AI-powered number plate scanning and history tracking.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

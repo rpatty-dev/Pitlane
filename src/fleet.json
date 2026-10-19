@@ -1,0 +1,47 @@
+[
+  {
+    "vehicle": "Ford Transit Custom",
+    "registrationPlate": "FT24 VAN",
+    "year": "2024",
+    "owner": "Acme Contracting",
+    "driver": "Alex Miller",
+    "motExp": "15/05/2027",
+    "comment": "Main Service Van #1"
+  },
+  {
+    "vehicle": "Vauxhall Vivaro",
+    "registrationPlate": "VX22 FLT",
+    "year": "2022",
+    "owner": "Acme Contracting",
+    "driver": "Sam Taylor",
+    "motExp": "10/11/2026",
+    "comment": "Plumbing Maintenance Unit"
+  },
+  {
+    "vehicle": "Mercedes-Benz Sprinter",
+    "registrationPlate": "MB71 EXP",
+    "year": "2021",
+    "owner": "Acme Contracting",
+    "driver": "Jordan Vance",
+    "motExp": "04/09/2026",
+    "comment": "Heavy Electrical Fitout"
+  },
+  {
+    "vehicle": "Volkswagen Transporter",
+    "registrationPlate": "VW23 LOG",
+    "year": "2023",
+    "owner": "Acme Contracting",
+    "driver": "Morgan Kelly",
+    "motExp": "22/03/2027",
+    "comment": "HVAC Emergency Response"
+  },
+  {
+    "vehicle": "Peugeot Partner",
+    "registrationPlate": "PE20 RUN",
+    "year": "2020",
+    "owner": "Acme Contracting",
+    "driver": "Chris Bell",
+    "motExp": "18/08/2026",
+    "comment": "Parts Runner / Courier"
+  }
+]

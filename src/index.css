@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "SF Pro Display", "-apple-system", "BlinkMacSystemFont", "Product Sans", "Google Sans", "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* iOS App-like optimizations */
+html, body {
+  background-color: #ffffff;
+  overscroll-behavior-y: contain; /* Prevents browser bounce/pull-to-refresh on iPhone Safari */
+  -webkit-tap-highlight-color: transparent; /* Disable browser gray box overlays on tap */
+  -webkit-touch-callout: none; /* Disable iOS callout menu on holding elements */
+  user-select: none; /* Disable generic copy highlights during double-taps */
+}
+
+/* Allow text input fields to be normally selectable */
+input, textarea, [contenteditable="true"] {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+/* iPhone Notch safe boundary padding helper */
+.ios-notch-padding {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+.ios-bottom-padding {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* Hide print-only elements on screen */
+.print-only {
+  display: none !important;
+}
+
+/* Print optimizations for clean report outputs */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0.8cm !important;
+  }
+
+  /* Hide interactive elements, navigation headers, sidebar tools, and buttons */
+  header,
+  nav,
+  button,
+  .print-hide {
+    display: none !important;
+  }
+
+  /* Reset page backgrounds for high contrast physical print */
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide scrollbars & disable overflow */
+  body {
+    overflow: visible !important;
+  }
+
+  /* Expand print-only elements and use flex layout to push signatures down */
+  .print-only {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 26.2cm !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Force signatures to stay at the absolute bottom of the sheet */
+  .print-signatures {
+    margin-top: auto !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Override general grid flattening specifically for our print-only layout grid structures */
+  .print-only .grid {
+    display: grid !important;
+  }
+  .print-only .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .print-only .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  .print-only .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  /* Expand the main job detail container to take full width */
+  #job-detail-root {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Avoid page breaks within table rows, paragraphs, and sections */
+  tr, p, h2, h3, h4, table, img, .border {
+    page-break-inside: avoid !important;
+  }
+
+  /* Give table elements neat borders */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+  th, td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 4px 8px !important;
+  }
+}
+
+
