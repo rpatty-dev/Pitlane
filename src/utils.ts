@@ -532,7 +532,7 @@ export async function generateJobPDF(job: VanJob, activeUser: string = "Mechanic
   doc.setFont("helvetica", "bold");
   doc.setFontSize(16);
   doc.setTextColor(primaryColor[0], primaryColor[1], primaryColor[2]);
-  doc.text("FLEETTRACK", 15, 18);
+  doc.text("PITLANE", 15, 18);
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(8);

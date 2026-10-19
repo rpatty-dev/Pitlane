@@ -1,8 +1,8 @@
 {
-  "name": "fleettrack",
+  "name": "pitlane",
   "private": true,
   "version": "1.0.0",
-  "description": "Open-source fleet maintenance, vehicle intake, and repair logging platform",
+  "description": "Open-source fleet maintenance, vehicle intake, and workshop repair management platform",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",

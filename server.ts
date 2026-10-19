@@ -252,7 +252,7 @@ app.post("/api/send-email", async (req, res) => {
     const mailOptions = {
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
       to: process.env.NOTIFICATION_EMAIL || process.env.SMTP_USER,
-      subject: `[FleetTrack] New Repair Logged: ${job.registrationPlate} - ${job.make} ${job.model}`,
+      subject: `[Pitlane] New Repair Logged: ${job.registrationPlate} - ${job.make} ${job.model}`,
       text: `
 New job logged by ${user || "Anonymous"}:
 

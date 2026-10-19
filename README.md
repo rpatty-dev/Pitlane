@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="logo.svg" alt="FleetTrack Logo" width="460" />
+<img src="logo.svg" alt="Pitlane Logo" width="460" />
 
 <p align="center">
-  <strong>Open-source, self-hostable fleet maintenance, vehicle intake, and repair logging platform.</strong><br>
+  <strong>High-performance, open-source fleet maintenance, vehicle intake, and workshop repair platform.</strong><br>
   Built with Vite, React 19, TypeScript, Tailwind CSS, Express, and optional multimodal AI OCR.
 </p>
 
@@ -27,11 +27,11 @@
 
 ---
 
-## ⚡ What is FleetTrack?
+## ⚡ What is Pitlane?
 
 Commercial fleet maintenance software is often bloated, expensive, and locked behind heavy recurring SaaS subscriptions. Small-to-medium logistics operators, trade contractors, and independent garages need a fast, rugged, and modern solution for tracking vehicle repairs, MOT expirations, driver handoffs, and part costs.
 
-**FleetTrack** is an offline-capable, mobile-first web app and backend engine designed for workshop mechanics, yard foremen, and fleet dispatchers.
+**Pitlane** is an offline-capable, mobile-first web app and backend engine designed for workshop mechanics, yard foremen, and fleet dispatchers.
 
 ### Key Capabilities
 
@@ -54,8 +54,8 @@ Commercial fleet maintenance software is often bloated, expensive, and locked be
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/rpatty-dev/FleetTrack.git
-cd FleetTrack
+git clone https://github.com/rpatty-dev/Pitlane.git
+cd Pitlane
 ```
 
 ### 2. Install Dependencies
@@ -81,7 +81,7 @@ cp .env.example .env
 | `SMTP_PASS` | SMTP password | `""` |
 | `NOTIFICATION_EMAIL`| Recipient email address for new repair dispatches | `""` |
 
-*(Note: FleetTrack runs perfectly in local mode without any API keys or SMTP servers configured).*
+*(Note: Pitlane runs smoothly in local mode without any API keys or SMTP servers configured).*
 
 ### 4. Start Development Server
 
@@ -96,7 +96,7 @@ Open your browser at **`http://localhost:3000`**.
 ## 🛠️ Project Structure
 
 ```text
-FleetTrack/
+Pitlane/
 ├── api/                    # Serverless API endpoints (Vercel / Node)
 │   ├── detect-vehicle.ts   # Vehicle visual classification
 │   ├── fleet.ts            # Fleet CRUD operations
@@ -134,9 +134,9 @@ npm start
 
 ### Deploy to Vercel
 
-FleetTrack includes preconfigured `vercel.json` rules for one-click deployment:
+Pitlane includes preconfigured `vercel.json` rules for one-click deployment:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frpatty-dev%2FFleetTrack)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frpatty-dev%2FPitlane)
 
 ---
 

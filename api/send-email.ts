@@ -58,7 +58,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const mailOptions = {
       to: process.env.NOTIFICATION_EMAIL || process.env.SMTP_USER,
-      subject: `[FleetTrack] New Repair Logged: ${job.registrationPlate} - ${job.make} ${job.model}`,
+      subject: `[Pitlane] New Repair Logged: ${job.registrationPlate} - ${job.make} ${job.model}`,
       text: `
 New job logged by ${user || 'Anonymous'}:
 

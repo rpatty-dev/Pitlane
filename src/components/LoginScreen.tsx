@@ -98,8 +98,8 @@ export default function LoginScreen({ onLogin }: LoginScreenProps) {
             <Wrench className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-2xl font-black uppercase tracking-tighter">FleetTrack</h1>
-            <p className="text-[10px] text-blue-100 font-mono font-bold uppercase tracking-widest mt-1">Fleet Maintenance &amp; Vehicle Intake</p>
+            <h1 className="text-2xl font-black uppercase tracking-tighter">Pitlane</h1>
+            <p className="text-[10px] text-blue-100 font-mono font-bold uppercase tracking-widest mt-1">Fleet Maintenance &amp; Workshop Operations</p>
           </div>
         </div>
 
@@ -270,7 +270,7 @@ export default function LoginScreen({ onLogin }: LoginScreenProps) {
 
         {/* Policy footer */}
         <div className="bg-slate-50 p-4 border-t border-slate-200 text-center text-[9px] text-slate-400 font-mono uppercase tracking-wider">
-          FleetTrack — Authorized Fleet Personnel Only
+          Pitlane — Authorized Workshop Personnel Only
         </div>
 
       </div>

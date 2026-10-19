@@ -464,7 +464,7 @@ export default function JobDetailView({ job, onBack, onEdit, onDelete, onStatusC
         {/* Company Header */}
         <div className="border-b-2 border-slate-900 pb-2 flex justify-between items-end">
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-slate-900">FLEETTRACK</h1>
+            <h1 className="text-xl font-bold tracking-tight text-slate-900">PITLANE</h1>
             <p className="text-[9px] text-slate-500 font-bold uppercase tracking-wider font-mono">VEHICLE REPAIR & INSPECTION REPORT</p>
           </div>
           <div className="text-right text-[8px] text-slate-400 font-mono">
