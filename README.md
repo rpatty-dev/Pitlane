@@ -143,3 +143,7 @@ Pitlane includes preconfigured `vercel.json` rules for one-click deployment:
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+---
+
+Built with help from [Nitech](https://nitech.dev).
